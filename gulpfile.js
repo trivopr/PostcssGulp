@@ -7,6 +7,7 @@ var precss = require('precss');
 var awesome = require('postcss-font-awesome');
 var cssnext = require("postcss-cssnext");
 var cssnano = require('gulp-cssnano');
+var atImport = require("postcss-import");
 
 gulp.task('serve', ['css'], function() {
     browserSync.init({
@@ -19,6 +20,7 @@ gulp.task('serve', ['css'], function() {
 
 gulp.task('css', function() {
     var plugins = [
+        atImport(),
         precss(),
         cssnext(),
         postcssFlexbox(),
@@ -26,7 +28,7 @@ gulp.task('css', function() {
         awesome()
     ];
 
-    return gulp.src('./app/styles/*.css')
+    return gulp.src('./app/styles/main.css')
         .pipe(postcss(plugins))
         // .pipe(cssnano())
         .pipe(gulp.dest('./app/dest/styles'));

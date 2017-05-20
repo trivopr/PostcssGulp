@@ -23,6 +23,7 @@
     "postcss-flexbox": "^1.0.2",
     "postcss-font-awesome": "^0.3.4",
     "postcss-font-magician": "^1.6.1",
+    "postcss-import": "^10.0.0",
     "precss": "^1.4.0"
   }
 }
