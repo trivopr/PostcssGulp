@@ -1,0 +1,31 @@
+$color1: yellow;
+$color2: blue;
+
+body {
+  background: gray;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50px;
+
+  a {
+    color: $color1;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+  }
+}
+
+
+@media (min-width: 360px) {
+  h1 {
+    a {
+      color: $color2;
+    }
+  }
+}
