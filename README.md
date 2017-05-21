@@ -5,7 +5,7 @@
 ##
 ##
 
-## <h3>Run</h3>
-## npm install
-## gulp
+## <h3>Run Project</h3>
+	npm install
+	gulp
 ##
