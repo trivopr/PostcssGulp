@@ -30,7 +30,7 @@ gulp.task('css', function() {
 
     return gulp.src('./app/styles/main.css')
         .pipe(postcss(plugins))
-        // .pipe(cssnano())
+        .pipe(cssnano())
         .pipe(gulp.dest('./app/dest/styles'));
 });
 
